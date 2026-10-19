@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav Anand — Software & Open Source</title>
+  <meta name="description" content="Personal site and open-source sponsor page of Abhinav Anand. Developer from Siwan, India working on agents, local inference, and open datasets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FBFBFA;
+      --card-bg: #FFFFFF;
+      --border: #E8E7E3;
+      --border-dark: #D4D2CB;
+      --text-main: #18191B;
+      --text-muted: #575A65;
+      --text-dim: #848792;
+      --accent: #1E392A; /* Deep British racing / forest green */
+      --accent-hover: #14271D;
+      --accent-light: #EBF2ED;
+      --font-serif: 'Newsreader', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem 1.5rem;
+    }
+
+    /* Top Nav */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .brand-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .header-links {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .header-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .header-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Intro */
+    .intro {
+      margin-bottom: 3rem;
+    }
+
+    .meta-location {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .meta-location .status-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #2E7D32;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.3rem;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      color: #111214;
+    }
+
+    .intro-p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .intro-p b {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Quote Box */
+    .quote-callout {
+      margin: 1.75rem 0;
+      padding: 1rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+    }
+
+    .quote-callout p {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--text-main);
+      line-height: 1.45;
+    }
+
+    /* Section divider & headings */
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Sponsor Block */
+    .sponsor-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+    }
+
+    .sponsor-header {
+      margin-bottom: 1.25rem;
+    }
+
+    .sponsor-header h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.4rem;
+    }
+
+    .sponsor-header p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .address-section {
+      margin: 1.5rem 0;
+      padding: 1.25rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .address-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .address-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .address-code {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      color: var(--text-main);
+      word-break: break-all;
+      background: #FFFFFF;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.55rem 0.95rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.15s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-solid {
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .btn-solid:hover {
+      background: var(--accent-hover);
+    }
+
+    .btn-outline {
+      background: #FFFFFF;
+      color: var(--text-main);
+      border-color: var(--border-dark);
+    }
+
+    .btn-outline:hover {
+      background: var(--bg);
+    }
+
+    .qr-row {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .qr-img {
+      width: 100px;
+      height: 100px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px;
+      background: #FFFFFF;
+      flex-shrink: 0;
+    }
+
+    .qr-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .qr-desc strong {
+      color: var(--text-main);
+    }
+
+    /* Projects List */
+    .project-item {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .project-item:first-of-type {
+      border-top: 1px solid var(--border);
+    }
+
+    .project-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .project-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .project-title:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .project-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+    }
+
+    .project-summary {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .project-links {
+      font-size: 0.82rem;
+      margin-top: 0.2rem;
+    }
+
+    .project-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    .project-links a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Philosophy / Working Style */
+    .note-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .note-box strong {
+      color: var(--text-main);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--accent);
+      color: #FFFFFF;
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transform: translateY(60px);
+      opacity: 0;
+      transition: all 0.2s ease;
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Navigation -->
+    <header>
+      <a href="https://github.com/abhinav00anand" class="brand-name">Abhinav Anand</a>
+      <nav class="header-links">
+        <a href="https://github.com/abhinav00anand">GitHub</a>
+        <a href="https://pypi.org/project/zymis/">PyPI</a>
+        <a href="#sponsor">Support</a>
+      </nav>
+    </header>
+
+    <!-- Main Intro -->
+    <main class="intro">
+      <div class="meta-location">
+        <span class="status-dot"></span>
+        <span>Siwan, India &bull; <span id="time-display">--:-- IST</span></span>
+      </div>
+
+      <h1>Software developer building autonomous tools and distributed systems.</h1>
+
+      <p class="intro-p">
+        Hey, I'm <b>Abhinav</b>. Most of my work revolves around writing Python and systems code for autonomous multi-agent workflows, experimenting with edge inference runtimes, and curating clean datasets for post-training alignment.
+      </p>
+
+      <p class="intro-p">
+        I believe in <b>local-first development</b>: writing software that runs, tests, and validates reliably on personal hardware before relying on cloud clusters.
+      </p>
+
+      <div class="quote-callout">
+        <p>&ldquo;Nothing is impossible when written in code.&rdquo;</p>
+      </div>
+    </main>
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Active Open Source Work</h2>
+
+      <div class="project-item">
+        <div class="project-title-row">
+          <a href="https://github.com/abhinav00anand/zymis" class="project-title">zymis</a>
+          <span class="project-badge">PyPI Package</span>
+        </div>
+        <p class="project-summary">
+          A usable, modular framework in Python for multi-agent software development. Handles planning, code generation, compilation checks, and sandboxed validation loops.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/abhinav00anand/zymis">Source Code &rarr;</a>
+          <a href="https://pypi.org/project/zymis/">PyPI Release &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title-row">
+          <a href="https://github.com/abhinav00anand/viento" class="project-title">viento</a>
+          <span class="project-badge">SDK v0.4.0</span>
+        </div>
+        <p class="project-summary">
+          A lightweight runtime SDK designed to link local and edge machine LLMs into a coordinated compute mesh, reducing reliance on centralized API endpoints.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/abhinav00anand/viento">Source Code &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title-row">
+          <a href="https://github.com/abhinav00anand/behavioral-fine-tuning-v1" class="project-title">behavioral-fine-tuning-v1</a>
+          <span class="project-badge">Open Dataset</span>
+        </div>
+        <p class="project-summary">
+          A curated open-source Supervised Fine-Tuning (SFT) corpus formatted in ChatML. Filtered to remove benchmark overlap and personal identifiable information for reliable behavioral alignment.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/abhinav00anand/behavioral-fine-tuning-v1">Repository & Documentation &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <section id="sponsor">
+      <h2>Support & Sponsorship</h2>
+
+      <div class="sponsor-card">
+        <div class="sponsor-header">
+          <h3>Back My Independent Engineering</h3>
+          <p>
+            If any of my open-source libraries or datasets have helped your projects, crypto contributions directly fund local testing hardware, electricity, and compute costs for training runs.
+          </p>
+        </div>
+
+        <div class="address-section">
+          <span class="address-label">Polygon PoS Network &bull; POL (MATIC) &bull; USDC &bull; USDT</span>
+          <div class="address-row">
+            <code class="address-code" id="addr">0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae</code>
+            <div class="actions">
+              <button class="btn btn-solid" onclick="copyAddress()">Copy Address</button>
+              <button class="btn btn-outline" onclick="sendViaWeb3()">Web3 Wallet</button>
+            </div>
+          </div>
+
+          <div class="qr-row">
+            <img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=ethereum:0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae" alt="Polygon QR Code" />
+            <div class="qr-desc">
+              Scan with your mobile wallet (MetaMask, Phantom, Trust Wallet).<br/>
+              Network: <strong>Polygon (PoS)</strong><br/>
+              <a href="https://polygonscan.com/address/0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">View transactions on PolygonScan &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Note -->
+    <section>
+      <h2>Working Style</h2>
+      <div class="note-box">
+        <strong>Loves Local Coding:</strong> I believe the best engineering happens close to the metal. Running models locally, testing in isolated containers, and verifying functionality offline creates software that is robust, sovereign, and free from external single points of failure.
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        Abhinav Anand &bull; Siwan, India
+      </div>
+      <div>
+        <a href="https://github.com/abhinav00anand">github.com/abhinav00anand</a>
+      </div>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast">Address copied to clipboard!</div>
+
+  <script>
+    function updateClock() {
+      const options = {
+        timeZone: 'Asia/Kolkata',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+      };
+      const timeStr = new Intl.DateTimeFormat([], options).format(new Date());
+      const el = document.getElementById('time-display');
+      if (el) el.textContent = timeStr + ' IST';
+    }
+    updateClock();
+    setInterval(updateClock, 30000);
+
+    function copyAddress() {
+      const addr = document.getElementById('addr').innerText.trim();
+      navigator.clipboard.writeText(addr).then(() => {
+        showToast('Address copied to clipboard');
+      }).catch(() => {
+        showToast(addr);
+      });
+    }
+
+    async function sendViaWeb3() {
+      if (typeof window.ethereum !== 'undefined') {
+        try {
+          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+          const from = accounts[0];
+          const to = '0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae';
+
+          try {
+            await window.ethereum.request({
+              method: 'wallet_switchEthereumChain',
+              params: [{ chainId: '0x89' }], // Polygon PoS
+            });
+          } catch (e) {}
+
+          await window.ethereum.request({
+            method: 'eth_sendTransaction',
+            params: [{ from: from, to: to, value: '0x0' }],
+          });
+          showToast('Transaction initiated in wallet');
+        } catch (err) {
+          if (err.code !== 4001) {
+            showToast('Wallet error');
+          }
+        }
+      } else {
+        copyAddress();
+        alert('No Web3 wallet found. The Polygon address was copied to your clipboard!');
+      }
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('toast');
+      toast.textContent = text;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2200);
+    }
+  </script>
+</body>
+</html>

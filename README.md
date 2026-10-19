@@ -136,24 +136,30 @@ If you find my projects on multi-agent systems and distributed AI inference valu
 <div align="center">
 
 <p align="center">
-  <a href="https://polygonscan.com/address/0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5">
-    <img src="https://img.shields.io/badge/Support%20via%20Polygon%20(POL)-0x0e30...5BA5-8247E5?style=for-the-badge&logo=polygon&logoColor=white" alt="Polygon Address" />
+  <a href="https://polygonscan.com/address/0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae">
+    <img src="https://img.shields.io/badge/Support%20via%20Polygon%20(POL)-0x2A1e...c2Ae-8247E5?style=for-the-badge&logo=polygon&logoColor=white" alt="Polygon Address" />
+  </a>
+  <a href="https://abhinav-anand.pages.dev#sponsor">
+    <img src="https://img.shields.io/badge/Web3%20Sponsor%20Portal-abhinav--anand.pages.dev-1E392A?style=for-the-badge&logo=cloudflarepages&logoColor=white" alt="Sponsor Portal" />
   </a>
 </p>
 
 <table>
   <tr>
     <td align="center">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ethereum:0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5" alt="Scan to Donate via Polygon" width="130" /><br/>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ethereum:0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae" alt="Scan to Donate via Polygon" width="130" /><br/>
       <sub><b>Scan with Web3 Wallet</b></sub>
     </td>
     <td align="left">
       <b>Network:</b> Polygon (PoS)<br/>
       <b>Supported:</b> POL (MATIC), USDC, USDT<br/>
       <b>Address:</b><br/>
-      <code>0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5</code><br/><br/>
-      <a href="https://polygonscan.com/address/0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5">
+      <code>0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae</code><br/><br/>
+      <a href="https://polygonscan.com/address/0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae">
         <img src="https://img.shields.io/badge/View%20on-PolygonScan-blue?style=flat-square&logo=polygon" />
+      </a>
+      <a href="https://abhinav-anand.pages.dev#sponsor">
+        <img src="https://img.shields.io/badge/Sponsor%20Page-Cloudflare%20Pages-black?style=flat-square" />
       </a>
     </td>
   </tr>
