@@ -174,11 +174,10 @@ If you find my projects on multi-agent systems and distributed AI inference valu
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-abhinav00anand-181717?style=for-the-badge&logo=github)](https://github.com/abhinav00anand)
+[![Email](https://img.shields.io/badge/Email-abhinav00anand%40proton.me-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:abhinav00anand@proton.me)
+[![Instagram](https://img.shields.io/badge/Instagram-%40abhinav00anand-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/abhinav00anand)
 [![PyPI](https://img.shields.io/badge/PyPI-Packages-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/zymis/)
-<!-- Add your profiles by replacing the links below:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com)
-[![X (Twitter)](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x)](https://x.com)
--->
+[![Website](https://img.shields.io/badge/Website-abhinav--anand.pages.dev-1E392A?style=for-the-badge&logo=cloudflarepages&logoColor=white)](https://abhinav-anand.pages.dev)
 
 <br/>
 

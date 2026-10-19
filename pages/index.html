@@ -389,6 +389,100 @@
       opacity: 1;
     }
 
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-category {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.15rem 1.25rem;
+    }
+
+    .skill-cat-title {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .skill-tag {
+      font-size: 0.82rem;
+      color: var(--text-main);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+    }
+
+    /* Contact Section */
+    .contact-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+    }
+
+    .contact-intro {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      padding: 0.85rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .contact-item:hover {
+      border-color: var(--border-dark);
+      background: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    .contact-label {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+    }
+
+    .contact-value {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--accent);
+      word-break: break-all;
+    }
+
     /* Footer */
     footer {
       margin-top: 4rem;
@@ -420,9 +514,10 @@
     <header>
       <a href="https://github.com/abhinav00anand" class="brand-name">Abhinav Anand</a>
       <nav class="header-links">
-        <a href="https://github.com/abhinav00anand">GitHub</a>
-        <a href="https://pypi.org/project/zymis/">PyPI</a>
+        <a href="#skills">Toolkit</a>
         <a href="#sponsor">Support</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/abhinav00anand">GitHub</a>
       </nav>
     </header>
 
@@ -493,6 +588,50 @@
       </div>
     </section>
 
+    <!-- Technical Toolkit & Capabilities -->
+    <section id="skills">
+      <h2>Technical Toolkit & Capabilities</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <span class="skill-cat-title">Core Languages</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Python (3.11 - 3.14)</span>
+            <span class="skill-tag">Shell / Bash</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">C / C++</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-title">AI & Systems</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Multi-Agent Swarms</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">SFT / Alignment</span>
+            <span class="skill-tag">ChatML</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-title">Runtimes & Edge</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Local LLMs (vLLM / Ollama)</span>
+            <span class="skill-tag">AsyncIO</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">P2P Mesh Protocols</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-title">Infrastructure & Tooling</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux / WSL</span>
+            <span class="skill-tag">Git / GitHub Actions</span>
+            <span class="skill-tag">Sandboxed Environments</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Sponsor Section -->
     <section id="sponsor">
       <h2>Support & Sponsorship</h2>
@@ -535,13 +674,44 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Direct Contact & Channels</h2>
+      <div class="contact-card">
+        <p class="contact-intro">
+          Whether you want to discuss multi-agent architectures, collaborate on distributed inference runtimes, or talk about open datasets, feel free to reach out directly.
+        </p>
+        <div class="contact-grid">
+          <a href="mailto:abhinav00anand@proton.me" class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">abhinav00anand@proton.me</span>
+          </a>
+          <a href="https://instagram.com/abhinav00anand" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@abhinav00anand</span>
+          </a>
+          <a href="https://github.com/abhinav00anand" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/abhinav00anand</span>
+          </a>
+          <a href="https://pypi.org/project/zymis/" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="contact-label">PyPI Releases</span>
+            <span class="contact-value">pypi.org/project/zymis</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer>
       <div>
-        Abhinav Anand &bull; Siwan, India
+        Abhinav Anand &bull; Siwan, India &bull; <a href="mailto:abhinav00anand@proton.me">abhinav00anand@proton.me</a>
       </div>
-      <div>
-        <a href="https://github.com/abhinav00anand">github.com/abhinav00anand</a>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://instagram.com/abhinav00anand" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://github.com/abhinav00anand" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://pypi.org/project/zymis/" target="_blank" rel="noopener noreferrer">PyPI</a>
+        <a href="https://polygonscan.com/address/0x2A1eEC07BC7DdFD09A54F160ba13748BB9f3c2Ae" target="_blank" rel="noopener noreferrer">PolygonScan</a>
       </div>
     </footer>
   </div>
