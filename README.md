@@ -129,6 +129,38 @@
 
 </div>
 
+### 💜 Sponsor & Support My Work
+
+If you find my projects on multi-agent systems and distributed AI inference valuable, you can support my open-source research and compute costs on the **Polygon (PoS)** network:
+
+<div align="center">
+
+<p align="center">
+  <a href="https://polygonscan.com/address/0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5">
+    <img src="https://img.shields.io/badge/Support%20via%20Polygon%20(POL)-0x0e30...5BA5-8247E5?style=for-the-badge&logo=polygon&logoColor=white" alt="Polygon Address" />
+  </a>
+</p>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ethereum:0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5" alt="Scan to Donate via Polygon" width="130" /><br/>
+      <sub><b>Scan with Web3 Wallet</b></sub>
+    </td>
+    <td align="left">
+      <b>Network:</b> Polygon (PoS)<br/>
+      <b>Supported:</b> POL (MATIC), USDC, USDT<br/>
+      <b>Address:</b><br/>
+      <code>0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5</code><br/><br/>
+      <a href="https://polygonscan.com/address/0x0e307077E4C73567a847Ba72439a0d3bC0Dc5BA5">
+        <img src="https://img.shields.io/badge/View%20on-PolygonScan-blue?style=flat-square&logo=polygon" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+</div>
+
 ---
 
 ### 🤝 Connect & Network
